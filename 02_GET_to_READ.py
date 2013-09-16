@@ -12,8 +12,9 @@ pizza_counter = 0
 def index():
   """The index page should show all the books, also accessible through /books"""
   books_list = '<ul>'
-  for book in books:
-    books_list = books_list + '<li>%s</li>' % book
+  for id, book in enumerate(books):
+    print(id, book)
+    books_list = books_list + '<li><a href="/books/%i">%s</a></li>' % (id, book)
   books_list = books_list + '</ul>'
 
   form = '''<form action="/books" method="POST">
