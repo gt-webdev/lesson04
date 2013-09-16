@@ -1,7 +1,9 @@
 from bottle import route, run
 
 # simple list of books we can offer
-books = ['pizza', 'burgers', 'pancakes']
+books = ['Lord of the Webdev', 
+  'HitchHiker\'s Guide to Webdev', 
+  'Webdev: the Good Parts']
 pizza_counter = 0
 
 
